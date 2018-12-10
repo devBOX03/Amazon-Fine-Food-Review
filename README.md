@@ -20,8 +20,8 @@ You will also need to have software installed to run and execute an iPython Note
 We recommend to install Anaconda, a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
 # Code
 
-The code is provided in the Amazon Fine Food Reviews.ipynb notebook file. You also need the Reviews.csv dataset file to run the Notebook. The dataset can be found here on Kaggle.
-Data
+The code is provided in the Amazon Fine Food Reviews.ipynb notebook file. You also need the Reviews.csv dataset file to run the Notebook. The dataset can be found on Kaggle(https://www.kaggle.com/snap/amazon-fine-food-reviews).
+# Data
 
 The dataset contains 568,454 food reviews Amazon users left from October 1999 to October 2012.).
 
