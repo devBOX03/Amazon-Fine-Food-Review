@@ -229,7 +229,7 @@ code snippet calling above fuction to train the model
 ```
     model = train_random_forest(bow_text_train_vector, y_train, 1000, 100)
 ```
-    <img src="screenshots/Model Training.png" alt="Model Training image missing."/>
+<img src="screenshots/Model Training.png" alt="Model Training image missing."/>
 
 ## [6.] Model Testing
 
