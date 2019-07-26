@@ -170,7 +170,7 @@ stopwords= set([
 <img src="screenshots/Data_Preprocessing.png" alt="Data Preprocessing image missing."/>
 
 
-##[2.] Spliting data into Train, CrossValidation and Test
+## [2.] Spliting data into Train, CrossValidation and Test
 
 ```
 """
@@ -184,17 +184,17 @@ y_cv = final['Score'][70000:80000]
 y_test = final['Score'][80000:100000]
 ```
 
-##[3.] Feature Vectorization
+## [3.] Feature Vectorization
 * Bag of words
 * TF IDF
 * Average Word to Vector
 * TF IDF Word to Vector
 
-##[4.] Parameter Tuning
+## [4.] Parameter Tuning
 
 <img src="screenshots/Parameters.png" alt="Data Preprocessing image missing."/>
 
-##[5.] Model Training
+## [5.] Model Training
 Below function trains model, finds train accuracy and AUC score and print confusion matrix.
 In this function I have used Random Frest alogorithm.
 
@@ -231,7 +231,7 @@ code snippet calling above fuction to train the model
 ```
     <img src="screenshots/Model Training.png" alt="Model Training image missing."/>
 
-##[6.] Model Testing
+## [6.] Model Testing
 
 Below code snippet test the models, finds test accuracy and AUC score and print confusion matrix.
 
