@@ -125,6 +125,7 @@ for sentance in tqdm(final['Text'].values):
 ```
 
 ### [1.1] Deconcatenation
+
 ```
 def decontracted(phrase):
     # specific
@@ -144,6 +145,7 @@ def decontracted(phrase):
 ```
 
 ### [1.2] Stopword Removal
+
 ```
 stopwords= set([
     'br', 'the', 'i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're",
@@ -169,6 +171,7 @@ stopwords= set([
 
 
 ##[2.] Spliting data into Train, CrossValidation and Test
+
 ```
 """
 Spliting sample data into :- [train:cross validation:test]
@@ -188,6 +191,7 @@ y_test = final['Score'][80000:100000]
 * TF IDF Word to Vector
 
 ##[4.] Parameter Tuning
+
 <img src="screenshots/Parameters.png" alt="Data Preprocessing image missing."/>
 
 ##[5.] Model Training
@@ -220,7 +224,8 @@ def train_random_forest(x_train, y_train, optimal_estimator, depth):
     plt.title("CONFUSION MATRIX")
     return model
 ```
-    code snippet calling above fuction to train the model
+code snippet calling above fuction to train the model
+
 ```
     model = train_random_forest(bow_text_train_vector, y_train, 1000, 100)
 ```
@@ -250,13 +255,15 @@ def test_random_forest(model, x_test, y_test):
     plt.title("CONFUSION MATRIX")
 ```
 calling the above fuction to get test scores.
+
 ```
 test_random_forest(model, bow_text_test_vector, y_test)
 ```
 <img src="screenshots/Model Testing.png" alt="Model Testing image missing."/>
 
 ### Top 20 important words of amazon food review
-Below code snippet will snow top 20 words that more value to our model
+Below code snippet will snow top 20 words that more value to our model.
+
 ```
 features = count_vect.get_feature_names()
 text = ""
@@ -269,6 +276,7 @@ plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
 plt.show()
 ```
+
 <img src="screenshots/Word Cloud.png" alt="Word Cloud image missing."/>
 
 ##[7.] Observation
