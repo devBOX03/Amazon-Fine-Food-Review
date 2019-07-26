@@ -232,6 +232,7 @@ code snippet calling above fuction to train the model
     <img src="screenshots/Model Training.png" alt="Model Training image missing."/>
 
 ##[6.] Model Testing
+
 Below code snippet test the models, finds test accuracy and AUC score and print confusion matrix.
 
 ```
@@ -262,6 +263,7 @@ test_random_forest(model, bow_text_test_vector, y_test)
 <img src="screenshots/Model Testing.png" alt="Model Testing image missing."/>
 
 ### Top 20 important words of amazon food review
+
 Below code snippet will snow top 20 words that more value to our model.
 
 ```
@@ -279,7 +281,8 @@ plt.show()
 
 <img src="screenshots/Word Cloud.png" alt="Word Cloud image missing."/>
 
-##[7.] Observation
+## [7.] Observation
+
 By applying all the featurized data to model traing andd testing, I got below results.
 
 <img src="screenshots/Observation.png" alt="Observation image missing."/>
