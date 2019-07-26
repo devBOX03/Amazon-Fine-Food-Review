@@ -58,7 +58,7 @@ The dataset contains 568,454 food reviews Amazon users left from October 1999 to
     9. Summary - brief summary of the review
     10. Text - text of the review
 
-<img src="Data_View.png" alt="Data Loading image missing." />
+<img src="screenshots/Data_View.png" alt="Data Loading image missing." />
 
 ## Target Variable
 
@@ -165,7 +165,7 @@ stopwords= set([
     ])
 ```
 
-<img src="Data_Preprocessing.png" alt="Data Preprocessing image missing."/>
+<img src="screenshots/Data_Preprocessing.png" alt="Data Preprocessing image missing."/>
 
 
 ##[2.] Spliting data into Train, CrossValidation and Test
@@ -188,7 +188,7 @@ y_test = final['Score'][80000:100000]
 * TF IDF Word to Vector
 
 ##[4.] Parameter Tuning
-<img src="Parameters.png" alt="Data Preprocessing image missing."/>
+<img src="screenshots/Parameters.png" alt="Data Preprocessing image missing."/>
 
 ##[5.] Model Training
 Below function trains model, finds train accuracy and AUC score and print confusion matrix.
@@ -224,7 +224,7 @@ def train_random_forest(x_train, y_train, optimal_estimator, depth):
 ```
     model = train_random_forest(bow_text_train_vector, y_train, 1000, 100)
 ```
-    <img src="Model Training.png" alt="Model Training image missing."/>
+    <img src="screenshots/Model Training.png" alt="Model Training image missing."/>
 
 ##[6.] Model Testing
 Below code snippet test the models, finds test accuracy and AUC score and print confusion matrix.
@@ -253,7 +253,7 @@ calling the above fuction to get test scores.
 ```
 test_random_forest(model, bow_text_test_vector, y_test)
 ```
-<img src="Model Testing.png" alt="Model Testing image missing."/>
+<img src="screenshots/Model Testing.png" alt="Model Testing image missing."/>
 
 ### Top 20 important words of amazon food review
 Below code snippet will snow top 20 words that more value to our model
@@ -269,9 +269,9 @@ plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
 plt.show()
 ```
-<img src="Word Cloud.png" alt="Word Cloud image missing."/>
+<img src="screenshots/Word Cloud.png" alt="Word Cloud image missing."/>
 
 ##[7.] Observation
 By applying all the featurized data to model traing andd testing, I got below results.
 
-<img src="Observation.png" alt="Observation image missing."/>
+<img src="screenshots/Observation.png" alt="Observation image missing."/>
